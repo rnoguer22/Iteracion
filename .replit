@@ -1,2 +1,3 @@
 language = "bash"
 run = "ej11.py"
+run2 = "python ej8.py"
