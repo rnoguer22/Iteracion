@@ -1,3 +1,5 @@
+import tabulate
+
 def descomponer():
 
   separador = str(input("Introduce el separador que desea utilizar: "))
@@ -5,8 +7,12 @@ def descomponer():
 
   ca = cadena.split(separador)
 
-  info = {"Cadena" : ca}
+  n = len(ca)
 
-  print(tabulate(info, headers = "keys", tablefmt = "fancy_grid", showindex = True))
+  table = [["nº", int(n)], ["Cadena", str(ca)]]
+  
+  print(tabulate(table, tablefmt = "fancy_grid"))
+
+ 
 
 descomponer()
