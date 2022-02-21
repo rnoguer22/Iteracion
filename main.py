@@ -1,5 +1,5 @@
-import ejercicio
+import ej8
 
 
 if __name__ == "__main__":
-  print(ejercicio.__name__)
+  ej8.descomponer()

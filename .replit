@@ -1,2 +1,2 @@
 language = "bash"
-run = "python ej8.py"
+run = "python main"
