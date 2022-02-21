@@ -6,12 +6,16 @@ def descomponer():
   cadena = str(input("Introduce un texto para analizar: "))
 
   ca = cadena.split(separador)
-
-  n = len(ca)
-
-  table = [["nº", int(n)], ["Cadena", str(ca)]]
   
-  print(tabulate(table, tablefmt = "fancy_grid"))
+  lista = []
+  for i in range(0, len(ca)):
+    lista.append(list(ca[i:i+1]))
+  print(lista)
+
+  table = lista
+  headers = ["nº", "Cadena"]
+  print(tabulate.tabulate(table,headers, tablefmt = "fancy_grid", showindex = True))
+  
 
  
 
