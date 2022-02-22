@@ -20,7 +20,7 @@ def mcd_sumas_restas (a,b):
 
 def iniciar():
 
-  num1 = int(input("Introduce un número: "))
-  num2 = int(input("Introduce otro número: "))
+  num1 = 6
+  num2 = 8
   print ("Por el algoritmo de Euclides: {}".format(mcd_euclides(num1, num2)))
   print ("Usando sumas y restas: ", mcd_sumas_restas(num1,num2))
