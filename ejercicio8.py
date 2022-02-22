@@ -10,13 +10,11 @@ def descomponer():
   lista = []
   for i in range(0, len(ca)):
     lista.append(list(ca[i:i+1]))
-  print(lista)
 
   table = lista
   headers = ["nº", "Cadena"]
-  print(tabulate.tabulate(table,headers, tablefmt = "fancy_grid", showindex = True))
+  print(tabulate.tabulate(table, headers, tablefmt = "fancy_grid", showindex = True))
+
+
   
 
- 
-
-descomponer()

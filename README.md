@@ -1,4 +1,2 @@
-# Iteracion
-hola
-Como no voy a enviar tareas si es parte de nuestro proceso de aprendizaje y sobre todo maduracion (SI COMO LOS JAMONES)
-xD
+# Iteración
+La dirección de nuestro repositorio es: [GitHub](https://github.com/rnoguer22/Iteracion)

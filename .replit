@@ -1,2 +1,3 @@
 language = "bash"
-run = "python main"
+
+run = "python main.py"
