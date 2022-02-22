@@ -1,12 +1,20 @@
 import tabulate
 
 def palabra():
-  diccionario = {1 : "Patata", 2 : "Fotos", 3 : "Ancla", 4 : "Cucaracha"}
+  diccionario =  ["Patata", "Fotos", "Ancla", "Cucaracha"]
   
   print("Las palabras de este diccionario son: ")
-  for i in diccionario:
-    print("{}".format(diccionario[i]))
-
+  for i in range(0, len(diccionario)):
+    print(diccionario[i])
   
+  diccionario.sort()
+
+  table = []
+  for i in range(0, len(diccionario)):
+    
+    table.append(list(diccionario[i:i+1]))
+  
+  headers = ["i", "diccionario", "anterior", "siguiente"]
+  print(tabulate.tabulate(table, headers, tablefmt = "fancy_grid", showindex = True))
 
 palabra()
