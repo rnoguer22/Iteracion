@@ -1,9 +1,9 @@
 import ejercicio8
 import ejercicio11
-import ejercicio 12
+import ejercicio12
 
 if __name__ == "__main__":
-
+  
   print("Ejercicio 8:")
   ejercicio8.descomponer()
   print("\n")

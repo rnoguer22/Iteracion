@@ -17,4 +17,3 @@ def calcular_cuadrados_perf(n):
   for x in r:
     print (x)
 
-calcular_cuadrados_perf(45)
