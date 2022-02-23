@@ -1,25 +1,38 @@
 import tabulate
 
-def tabla(diccionario):
-  table = []
+diccionario =  ["Patata", "Fotos", "Ancla",                             "Cucaracha"]
+
+def palabra(dicccionario):
+
+  palabra = []
+
   for i in range(0, len(diccionario)):
-    
-    table.append(list(diccionario[i:i+1]))
+    diccionario.sort()
+    z = [i + 1, diccionario[i], i, i + 2]
+    palabra.append(z)
   
+  tabla = palabra
+
   headers = ["i", "diccionario", "anterior", "siguiente"]
-  print(tabulate.tabulate(table, headers, tablefmt = "fancy_grid", showindex = True))
 
-def palabra():
-  diccionario =  ["Patata", "Fotos", "Ancla", "Cucaracha"]
+  print("Este es el diccionario:")
+  print(tabulate.tabulate(tabla, headers, tablefmt = "fancy_grid"))
+
+
+def añadir():
+
+  n = str(input("Introduce la palabra que quieres añadir al diccionario: "))
+  diccionario.append(n)
+
+  palabra(diccionario)
   
-  tabla(diccionario)
+def delete():
+  n = str(input("Introduce la palabra que quieres quitar del diccionario: "))
+  diccionario.remove(n)
 
-  print("\n")
+  palabra(diccionario)
   
-  diccionario.sort()
-
-  print("Ordenadas alfabéticamente:")
-
-  tabla(diccionario)
-
-palabra()
+def inicio():
+  palabra(diccionario)
+  añadir()
+  delete()
