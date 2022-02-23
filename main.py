@@ -1,9 +1,14 @@
+import ejercicio7
 import ejercicio8
 import ejercicio11
 import ejercicio12
 
 if __name__ == "__main__":
-  
+
+  print("Ejercicio 7:")
+  ejercicio7.flujo_programa()
+  print("\n")
+
   print("Ejercicio 8:")
   ejercicio8.descomponer()
   print("\n")
@@ -13,5 +18,6 @@ if __name__ == "__main__":
   print("\n")
 
   print ("Ejercicio 12:")
-  ejercicio12.calcular_cuadrados_perf(45)
+  n = int(input("Introduzca un numero: "))
+  ejercicio12.calcular_cuadrados_perf(n)
   print("\n")

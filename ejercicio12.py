@@ -17,3 +17,7 @@ def calcular_cuadrados_perf(n):
   for x in r:
     print (x)
 
+if __name__ == "__main__":
+
+  n = int(input("Introduzca un numero entero: "))
+  calcular_cuadrados_perf(n)
