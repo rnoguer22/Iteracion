@@ -52,6 +52,68 @@ if __name__ == "__main__":
   flujo_programa()
 ```
 
+## Ejercicio 8
+```python
+import tabulate
+
+def descomponer():
+
+  separador = str(input("Introduce el separador que desea utilizar: "))
+  cadena = str(input("Introduce un texto para analizar: "))
+
+  ca = cadena.split(separador)
+  
+  lista = []
+  for i in range(0, len(ca)):
+    lista.append(list(ca[i:i+1]))
+
+  table = lista
+  headers = ["nº", "Cadena"]
+  print(tabulate.tabulate(table, headers, tablefmt = "fancy_grid", showindex = True))
+```
+
+## Ejercicio 9
+```python
+import tabulate
+
+diccionario =  ["Patata", "Fotos", "Ancla",                             "Cucaracha"]
+
+def palabra(dicccionario):
+
+  palabra = []
+
+  for i in range(0, len(diccionario)):
+    diccionario.sort()
+    z = [i + 1, diccionario[i], i, i + 2]
+    palabra.append(z)
+  
+  tabla = palabra
+
+  headers = ["i", "diccionario", "anterior", "siguiente"]
+
+  print("Este es el diccionario:")
+  print(tabulate.tabulate(tabla, headers, tablefmt = "fancy_grid"))
+
+
+def añadir():
+
+  n = str(input("Introduce la palabra que quieres añadir al diccionario: "))
+  diccionario.append(n)
+
+  palabra(diccionario)
+  
+def delete():
+  n = str(input("Introduce la palabra que quieres quitar del diccionario: "))
+  diccionario.remove(n)
+
+  palabra(diccionario)
+  
+def inicio():
+  palabra(diccionario)
+  añadir()
+  delete()
+  ```
+
 ## Ejercicio 11
 ```python3
 "Primera parte del ejercicio"
