@@ -52,11 +52,11 @@ class banco:
         print(i)
     
     
-
-cliente = banco(cuenta, saldo)
-print(cliente.respuesta())
-print(cliente.algo_mas())
-print(cliente.historial())
+def inicio():
+  cliente = banco(cuenta, saldo)
+  print(cliente.respuesta())
+  print(cliente.algo_mas())
+  print(cliente.historial())
 
 
 

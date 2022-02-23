@@ -1,3 +1,4 @@
+import ejercicio6
 import ejercicio7
 import ejercicio8
 import ejercicio9
@@ -6,6 +7,10 @@ import ejercicio12
 
 if __name__ == "__main__":
 
+  print("Ejercicio 6:")
+  ejercicio6.inicio()
+  print("\n")
+  
   print("Ejercicio 7:")
   ejercicio7.flujo_programa()
   print("\n")
